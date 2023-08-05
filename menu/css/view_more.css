@@ -1,0 +1,203 @@
+@font-face {
+    font-family:poppins-bold;
+    src: url(../../Poppins/Poppins-Bold.ttf) format('truetype');
+}
+
+
+@font-face{
+    font-family:poppins-medium;
+    src:url(../../Poppins/Poppins-Medium.ttf) format('truetype');
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    margin:auto;
+    border: 0px;
+}
+
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+    font-family: poppins-medium; 
+}
+
+body{
+    margin:0;
+    background-color: #25253e;
+    scroll-behavior:smooth;
+}
+/* Type of animal */
+.tabcontent h2{
+    font-family: poppins-bold;
+    color: #fff;
+    text-align: center;  
+    font-size: 50px;
+    letter-spacing: 8px;
+    width: 100%;
+    text-decoration:underline;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+/* Submenu bar */
+.nav{
+    border-radius:50px;
+    background-color:#25253e;
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    
+}
+
+.nav button{
+    height: 50px;
+    border:none;
+    outline:none;
+    background-color: transparent;
+    margin-right:5%;
+    margin-top: 10%;
+
+}
+
+.tablink{
+    text-decoration: none;
+    color:white;
+    font-size: large;
+   
+}
+
+.tablink:hover{
+  
+    background:-webkit-linear-gradient(left,#9055FF, #13E2DA);
+    padding:7px;
+    cursor: pointer;
+}
+  
+
+/*Design for animals'box*/
+.animal{
+    position:relative;
+    width:250px;
+    height:350px;
+    background:#fff;
+    margin:30px;
+    display:inline-block;
+}
+
+.image{
+    overflow:hidden;
+    margin:0 auto;
+}
+
+.image img{
+    width:100%;
+    transition:.3s all ease-in;
+}
+
+.title{
+    position:absolute;
+    margin-top:-42px;
+    background:rgb(0,0,0,);
+    background:rgba(0,0,0,0.5);
+    color:#f1f1f1;
+    width:100%;
+    transition:.5s ease;
+    opacity:0;
+    color:white;
+    font-size:14px;
+    padding:10px;
+    text-align:center;
+    letter-spacing: 2px;
+}
+
+.image:hover .title{
+    opacity:1;
+}
+
+.image:hover img{
+    transform:scale(1.1);
+}
+/*Design for animals' details box*/
+.details{
+    border:none;
+    outline:none;
+    background:transparent;
+    cursor:pointer;
+}
+
+.details div{
+    height:2px;
+    width:20px;
+    background-color:#000;
+    margin:6px 6px;
+}
+
+.details h3{
+    margin-left:33px;
+    margin-top:-27px;
+    position:absolute;
+}
+
+.tapir,
+.gibbon,
+.bear,
+.treeshrew,
+.harlequin,
+.malesian,
+.humerana,
+.blyth,
+.snake,
+.gecko,
+.lizard,
+.turtle,
+.mahseer,
+.sultan,
+.giant,
+.empurau,
+.hornbill,
+.pitta,
+.iora,
+.triller,
+.leaf,
+.ant,
+.bee{
+    color:#fff;
+    background-color:#7c95ab;
+    width:50%;
+    height:50%;
+    padding:13px;
+    margin:auto;
+    right:0;
+    left:0;
+    top:30%;
+    border-left:10px solid #5e858d;
+    position:fixed;
+    display:none;
+    z-index:41;
+}
+
+.info{
+    line-height: 40px;
+    letter-spacing:1px;
+}
+
+.info span{
+    color:#517589;
+    text-transform: uppercase;
+    letter-spacing:2px;
+    font-weight: 600;
+}
+
+.info .closedetail{
+    background-color:transparent;
+    color:#fff;
+    float:right;
+    font-size:17px;
+    border:none;
+}
+
+.info .closedetail:hover{
+    font-size:20px;
+    transition:.2s;
+}

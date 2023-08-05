@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel = "icon" href ="../home/homepage photo/icon logo.jpg" type = "image/x-icon">
+    <link rel="stylesheet" href="homepage.css">
+    <link href="../navigation bar/navigation bar.css" rel="stylesheet"/>
+    <link href="../general/general.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="../general/general.js"></script>
+   
+
+</head>
+<body>
+    <!-- welcome message -->
+    <div class="header">
+        <div class="home">
+           <h1 style="margin-left:65%; width:100%;">Welcome To Malaysia</h1>
+           <img src="../home/homepage photo/malaylogo.png" width="100px" height="100px" alt="" style="margin-left:100%;">
+        </div>
+    </div>
+    
+    <!--navigation bar-->
+    <div class="navmenu">
+        <div class="opennavmenubtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menucontent">
+            <a href="../home/homepage.html">Home</a>
+            <a href="../contact us/contactus.html">Contact Us</a>
+            <a href="../menu/html/menu.html">About</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Categories</button>
+                <div id="Dropdown" class="dropdown-content">
+                  <a href="../menu/html/view_more.html#p1">Mammals</a>
+                  <a href="../menu/html/view_more.html#p2">Amphibians</a>
+                  <a href="../menu/html/view_more.html#p3">Reptiles</a>
+                  <a href="../menu/html/view_more.html#p4">Fish</a>
+                  <a href="../menu/html/view_more.html#p5">Birds</a>
+                  <a href="../menu/html/view_more.html#p6">Insects</a>
+                </div>
+                <script src="../navigation bar/Navbtn.js"></script>
+              </div> 
+            
+        </div>
+        <div class="signinicon">
+        <a href="../login/signin.html">
+        <img alt="Sign in icon" src="../navigation bar/icon.png" width="60" height="60" style="vertical-align:left; margin:0px 16px"></a>
+        </div>
+    </div>
+
+           <!-- welcome message background video -->
+            <div class="slider" style="left:28%;">
+                <div class="slides">
+                        <input type="radio" name="radio-btn" id="radio1">
+                        <input type="radio" name="radio-btn" id="radio2">
+                        <input type="radio" name="radio-btn" id="radio3">
+                        <input type="radio" name="radio-btn" id="radio4">
+                        <div class="slide first">
+                        <video src="homevideo1.mp4" alt="ANIMALS" loop autoplay muted>		
+                        </div>
+                        <div class="slide">
+                        <video src="homevideo2.mp4" alt="ANIMALS" loop autoplay muted></video>
+                        </div>
+                        <div class="slide">
+                        <video src="homevideo2.mp4" alt="ANIMALS" loop autoplay muted></video>
+                        </div>
+                        <div class="slide">
+                        <video src="homevideo3.mp4" alt="ANIMALS" loop autoplay muted></video>
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                        </div>
+                </div>
+                <div class="navigation-manual">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                </div>
+            </div>
+            <script type="text/javascript">
+            var counter = 1;
+            setInterval(function(){
+                document.getElementById('radio'+ counter).checked = true;
+                counter++;
+                if(counter > 4){
+                    counter = 1;
+                }
+            },5000);
+            </script>
+            
+        </div>
+        <!-- homepage animals in Malysia -->
+        <section class="Home" id="Home">
+            <div class="home-slider">
+                <div class="wrapper">
+                    <div class="slide1">
+                        <div class="content">
+                            <span>ANIMALS OF MALAYSIA</span>
+                            <h3>1462 SPECIES</h3>
+                            <p>Malaysia is a country in Southeast Asia.<br/>Peninsular Malaysia shares a land and maritime border with Thailand and maritime borders with Singapore, Vietnam, and Indonesia. East Malaysia shares land and maritime borders with Brunei and Indonesia and a maritime border with the Philippines and Vietnam. </p>
+                
+                        </div>
+                        <div class="image1">
+                            <img src="../home/homepage photo/home.jpg" alt="" >
+                        </div>
+                        <div class="image1">
+                            <img src="../home/homepage photo/11.jpg" alt="" >
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="content">
+                            <h3>BORNEAN ELEPHANTS</h3>
+                            <p1>Asian elephants differ in several ways from their African relatives. They have smaller ears, unlike the large fan-shaped ears of the African species. The Asian elephant is also much smaller. Asian elephants occurring in northern Borneo are known as Bornean elephants. The Bornean elephant is considered an evolutionarily significant unit. Due to habitat loss, fragmentation, poaching and human-elephant conflict, the Bornean elephant population in Malaysian Borneo is estimated at just 1,500 elephants. The Asian elephants are listed as ‘endangered’ under the IUCN Red List of Threatened Species and number between 48,300 to 51,680 wild individuals.</p1>
+                            <br></br>
+                            <a href="../menu/html/menu.html" class="btn">LEARN MORE</a>
+                        </div>
+                        <div class="image1">
+                            <img src="../home/homepage photo/img_bornean_elephants.jpg" alt="" >
+                        </div>
+                    </div>
+                    <div class="slide1">
+                        <div class="content">
+                            <h3>THE MALAYAN TIGER</h3>
+                            <p1>The Malayan tiger is a symbol of courage and strength, represented in the emblems of the Royal Malaysian Police, our national football team and, more importantly, the Jata Negara, our national crest. The Malayan tiger is a territorial creature that needs large areas of forest to roam. It hunts alone, its main diet being smaller prey, with a preference for sambar deer. Tigers give birth to two to four cubs every two years. Cubs stay with their mother until they are two years old before setting off on their own.</p1>
+                            <br></br>
+                            <a href="../menu/html/menu.html" class="btn">LEARN MORE</a>
+                        </div>
+                        <div class="image1">
+                            <img src="../home/homepage photo/img_malayan_tiger.jpg" alt="dishe1">
+                        </div>
+                    </div>
+                </div>
+
+                   <!-- button for go to top of web page -->
+                    <div class="top">
+                        <button id="top-btn" onclick="topFunction()">&#708;</button>
+                    </div> </section>   
+                
+</body>
+<!--This is the footer column-->
+<footer class="footer">
+    <div class="container">
+       <div class="row">
+
+          <div class="footer-col">
+             <h2>Directory</h2>
+             <ul>
+                <li><a href="homepage.html">Home</a></li>
+                <li><a href="../menu/html/menu.html">About</a></li>
+             </ul>
+          </div>
+   
+           <div class="footer-col">
+              <h2>Categories</h2>
+              <ul>
+                  <li><a href="../menu/html/view_more.html#p1">Mammals</a></li>
+                  <li><a href="../menu/html/view_more.html#p2">Amphibians</a></li>
+                  <li><a href="../menu/html/view_more.html#p3">Reptiles</a></li>
+                  <li><a href="../menu/html/view_more.html#p4">Fish</a></li>
+                  <li><a href="../menu/html/view_more.html#p5">Birds</a></li>
+                  <li><a href="../menu/html/view_more.html#p6">Insects</a></li>
+             </ul>
+          </div>
+          
+              <div class="footer-col">
+              <h2>FAQ</h2>
+              <ul>
+                  <li><a href=".././contact us/contactus.html">Contact Us</a></li>
+             </ul>
+          </div>
+          
+              <div class="footer-col">
+              <h2>Social Media</h2>
+              <ul>
+                <div class="socialicon">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                   
+             </ul>
+          </div>
+          
+       </div>
+   </div>
+</footer>
+</html>

@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View More</title>
+    <link rel = "icon" href ="../../home/homepage photo/icon logo.jpg" type = "image/x-icon">
+    <link href="../css/view_more.css" rel="stylesheet"/>
+    <link href="../../navigation bar/navigation bar.css" rel="stylesheet" />
+    <link href="../../general/general.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <script src="../../general/general.js"></script>
+</head>
+<body>
+       <!--navigation bar-->
+       <div class="navmenu">
+        <div class="opennavmenubtn">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menucontent">
+            <a href="../../home/homepage.html">Home</a>
+            <a href="../../contact us/contactus.html">Contact Us</a>
+            <a href="../../menu/html/menu.html">About</a>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Categories</button>
+                <div id="Dropdown" class="dropdown-content">
+                  <a href="view_more.html#p1">Mammals</a>
+                  <a href="view_more.html#p2">Amphibians</a>
+                  <a href="view_more.html#p3">Reptiles</a>
+                  <a href="view_more.html#p4">Fish</a>
+                  <a href="view_more.html#p5">Birds</a>
+                  <a href="view_more.html#p6">Insects</a>
+                </div>
+                <script src="../../navigation bar/Navbtn.js"></script>
+              </div> 
+            </div>
+        </div>
+
+    <!--submenu bar-->
+    <div class="nav">
+        <button  id="defaultOpen" class="tablink" onclick="openPage('p1', this,'#9055FF')">Mammals</button>
+        <button class="tablink" onclick="openPage('p2', this, '#9055FF')">Amphibians</button>
+        <button class="tablink" onclick="openPage('p3', this, '#9055FF')">Reptiles</button>
+        <button class="tablink" onclick="openPage('p4', this, '#9055FF')">Fish</button>
+        <button class="tablink" onclick="openPage('p5', this, '#9055FF')">Birds</button>
+        <button class="tablink" onclick="openPage('p6', this, '#9055FF')">Insects</button>
+        <!-- <button><a href="#p1">Mammals</a></button>
+        <button><a href="#p2">Amphibians</a></button>
+        <button><a href="#p3">Reptiles</a></button>
+        <button><a href="#p4">Fish</a></button>
+        <button><a href="#p5">Birds</a></button>
+        <button><a href="#p6">Insects</a></button> -->
+        <script src="../js/js.categorybar.js"></script>
+    </div>
+    <!-- mammals -->
+   
+    <div id="p1" class="tabcontent">
+    <h2>MAMMALS</h2>
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/tapir.jpg" alt="" onclick="openTapir()"/>
+            <div class="title">Malayan Tapir</div>
+        </div>
+        <button class="details" onclick="openTapir()">
+        <div></div>
+        <div></div>
+        <div></div>
+        <h3>Learn More</h3>
+        </button>
+    </div>
+    <div class="tapir" id="tapir">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Melayan Tapir<br/>
+            <span>Scientific Name</span> : Tapirus Indicus<br/>
+            <span>Type</span> : Mammals<br/>
+            <span>Average Life Span</span> : 30 to 36.5 years<br/>
+            <span>Length</span> : 1.8 to 2.5 M<br/>
+            <span>Height</span> : 90 to 110 CM<br/>
+            <span>Weight</span> : 250 to 320 KG
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/gibbon.jpg" alt="" onclick="openGibbon()"/>
+            <div class="title">Agile Gibbon</div>
+         </div>
+         <button class="details" onclick="openGibbon()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="gibbon" id="gibbon">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Agile Gibbon<br/>
+            <span>Scientific Name</span> : Hylobates Agilis<br/>
+            <span>Type</span> : Mammals<br/>
+            <span>Average Life Span</span> : Up to 44 years<br/>
+            <span>Length</span> : 44 to 63.5 CM<br/>
+            <span>Weight</span> : 4 to 6 KG
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/bear.jpg" alt="" onclick="openBear()"/>
+            <div class="title">Sun Bear</div>
+         </div>
+         <button class="details" onclick="openBear()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="bear" id="bear">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Sun Bear<br/>
+            <span>Scientific Name</span> : Helarctos Malayanus<br/>
+            <span>Type</span> : Mammals<br/>
+            <span>Diet</span> : Omnivore<br/>
+            <span>Average Life Span</span> : Up to 25 years<br/>
+            <span>Size</span> : 4 to 5 feet long<br/>
+            <span>Weight</span> : 60 to 150 pounds
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/treeshrew.jpg" alt="" onclick="openTreeshrew()"/>
+            <div class="title">Treeshrew</div>
+         </div>
+         <button class="details" onclick="openTreeshrew()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="treeshrew" id="treeshrew">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Treeshrew<br/>
+            <span>Scientific Name</span> : Scandentia<br/>
+            <span>Type</span> : Mammals<br/>
+            <span>Average Life Span</span> : 25 to 35 days of age<br/>
+            <span>Length</span> : 16 to 21 CM<br/>
+            <span>Weight</span> : 190 G
+        </div>
+    </div>
+</div>
+    <!-- amphibians -->
+    <div id="p2" class="tabcontent">
+    <h2>AMPHIBIANS</h2>
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/harlequin.jpg" alt="" onclick="openHarlequin()"/>
+            <div class="title">Harlequin Tree Frog</div>
+         </div>
+         <button class="details" onclick="openHarlequin()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="harlequin" id="harlequin">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Harlequin Tree Frog<br/>
+            <span>Scientific Name</span> : Rhacophorus Pardalis<br/>
+            <span>Type</span> : Amphibians<br/>
+            <span>Average Life Span</span> : Up to 20 years<br/>
+            <span>Size</span> : Males &#10140; 39 to 55 mm;Females &#10140; 55 to 71 mm 
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/malesian.jpg" alt="" onclick="openMalesian()"/>
+            <div class="title">Malesian Frog</div>
+         </div>
+         <button class="details" onclick="openMalesian()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="malesian" id="malesian">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Malesian Frog<br/>
+            <span>Scientific Name</span> : Limnonectes Malesianus<br/>
+            <span>Type</span> : Amphibians<br/>
+            <span>Length</span> : 15 to 26 CM
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/humerana.jpg" alt="" onclick="openHumerana()"/>
+            <div class="title">Humerana Miopus</div>
+         </div>
+         <button class="details" onclick="openHumerana()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="humerana" id="humerana">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Humerana Miopus<br/>
+            <span>Scientific Name</span> : Rana Miopus<br/>
+            <span>Type</span> : Amphibians<br/>
+            <span>Size</span> : 73 mm
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/blyth.jpg" alt="" onclick="openBlyth()"/>
+            <div class="title">Blyth's River Frog</div>
+         </div>
+         <button class="details" onclick="openBlyth()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="blyth" id="blyth">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Blyth's River Frog<br/>
+            <span>Scientific Name</span> : Limnonectes Blythii<br/>
+            <span>Type</span> : Amphibians<br/>
+            <span>Size</span> : Males &#10140; 85 to 125 mm;Females &#10140; 90 to 260 mm
+        </div>
+    </div></div>
+
+    <!-- reptiles -->
+    <div id="p3" class="tabcontent">
+    <h2>REPTILES</h2> 
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/snake.jpg" alt="" onclick="openSnake()"/>
+            <div class="title">Paradise Flying Snake</div>
+         </div>
+         <button class="details" onclick="openSnake()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="snake" id="snake">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Paradise Flying Snake<br/>
+            <span>Scientific Name</span> : Chrysopelea Paradisi<br/>
+            <span>Type</span> : Reptiles<br/>
+            <span>Average Life Span</span> : 10 years<br/>
+            <span>Size</span> : 2 to 4 feet<br/>
+            <span>Weight</span> : 450 G to 1 KG
+        </div>
+    </div>  
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/gecko.jpg" alt="" onclick="openGecko()"/>
+            <div class="title">Kuhl’s Flying Gecko</div>
+         </div>
+         <button class="details" onclick="openGecko()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="gecko" id="gecko">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Kuhl’s Flying Gecko<br/>
+            <span>Scientific Name</span> : Gekko Kuhli<br/>
+            <span>Type</span> : Reptiles<br/>
+            <span>Average Life Span In The Wild</span> : 3 to 5 years<br/>
+            <span>Length</span> : Up to 20 CM
+        </div>
+    </div> 
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/lizard.jpg" alt="" onclick="openLizard()"/>
+            <div class="title">Malayan Crested Lizard </div>
+         </div>
+         <button class="details" onclick="openLizard()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="lizard" id="lizard">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Malayan Crested Lizard <br/>
+            <span>Scientific Name</span> : Gonocephalus Grandis<br/>
+            <span>Type</span> : Reptiles<br/>
+            <span>Size</span> : Males &#10140; 60 CM;Females &#10140; 52 CM
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/turtle.jpg" alt="" onclick="openTurtle()"/>
+            <div class="title">Malayan Softshell Turtle</div>
+         </div>
+         <button class="details" onclick="openTurtle()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="turtle" id="turtle">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Malayan Softshell Turtle<br/>
+            <span>Scientific Name</span> : Dogania Subplana<br/>
+            <span>Type</span> : Reptiles<br/>
+            <span>Length</span> : 35 CM
+        </div>
+    </div></div>
+
+    <!-- fish -->
+    <div id="p4" class="tabcontent">
+    <h2>FISH</h2>
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/mahseer.jpg" alt="" onclick="openMahseer()"/>
+            <div class="title">Putitor Mahseer</div>
+         </div>
+         <button class="details" onclick="openMahseer()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="mahseer" id="mahseer">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Putitor Mahseer<br/>
+            <span>Scientific Name</span> : Tor Putitora<br/>
+            <span>Type</span> : Fish<br/>
+            <span>Average Life Span</span> : 20 to 25 years<br/>
+            <span>Size</span> : 6.5 feet
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/sultan.jpg" alt="" onclick="openSultan()"/>
+            <div class="title">Sultan Fish</div>
+         </div>
+         <button class="details" onclick="openSultan()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="sultan" id="sultan">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Sultan Fish<br/>
+            <span>Scientific Name</span> : Leptobarbus Hoevenii<br/>
+            <span>Type</span> : Fish<br/>
+            <span>Size</span> : 1 m
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/giant.jpg" alt="" onclick="openGiant()"/>
+            <div class="title">Giant Snakehead</div>
+         </div>
+         <button class="details" onclick="openGiant()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="giant" id="giant">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Giant Snakehead<br/>
+            <span>Scientific Name</span> : Channa Micropeltes<br/>
+            <span>Type</span> : Fish<br/>
+            <span>Average Life Span</span> : 10 to 15 years or longer<br/>
+            <span>Size</span> : Up to 40 inches<br/>
+            <span>Weight</span> : Up to 44 pounds
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/empurau.jpg" alt="" onclick="openEmpurau()"/>
+            <div class="title">Ikan Empurau</div>
+         </div>
+         <button class="details" onclick="openEmpurau()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="empurau" id="empurau">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Ikan Empurau<br/>
+            <span>Scientific Name</span> : Tor Tambroides<br/>
+            <span>Type</span> : Fish<br/>
+            <span>Length</span> : 90 to 100 CM<br/>
+            <span>Body Height</span> : 30 to 40 CM<br/>
+            <span>Weight</span> : 30 to 40 KG
+        </div>
+    </div></div>
+
+    <!-- birds -->
+    <div id="p5" class="tabcontent">
+    <h2>BIRDS</h2>
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/hornbill.jpg" alt="" onclick="openHornbill()"/>
+            <div class="title">Hornbill</div>
+         </div>
+         <button class="details" onclick="openHornbill()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="hornbill" id="hornbill">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Hornbill<br/>
+            <span>Scientific Name</span> : Bucerotidae<br/>
+            <span>Type</span> : Birds<br/>
+            <span>Average Life Span</span> : 35 to 40 years<br/>
+            <span>Size</span> : 40 to 160 CM
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/pitta.jpg" alt="" onclick="openPitta()"/>
+            <div class="title">Pittas</div>
+         </div>
+         <button class="details" onclick="openPitta()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="pitta" id="pitta">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Pittas<br/>
+            <span>Scientific Name</span> : Pittidae<br/>
+            <span>Type</span> : Birds<br/>
+            <span>Size</span> : 15 to 29 CM<br/>
+            <span>Weight</span> : 42 o 210 G
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/iora.jpg" alt="" onclick="openIora()"/>
+            <div class="title">Common Iora</div>
+         </div>
+         <button class="details" onclick="openIora()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="iora" id="iora">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Common Iora<br/>
+            <span>Scientific Name</span> : Aegithina Tiphia<br/>
+            <span>Type</span> : Birds<br/>
+            <span>Size</span> : 12.5 to 13.5 CM<br/>
+            <span>Weight</span> : Males &#10140; 13 to 17 G;Females &#10140; 12 to 15 G
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/triller.jpg" alt="" onclick="openTriller()"/>
+            <div class="title">Pied Triller</div>
+         </div>
+         <button class="details" onclick="openTriller()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="triller" id="triller">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Pied Triller<br/>
+            <span>Scientific Name</span> : Lalage Nigra<br/>
+            <span>Type</span> : Birds<br/>
+            <span>Length</span> : 16 to 18 CM<br/>
+            <span>Weight</span> : 20 to 30 G
+        </div>
+    </div></div>
+
+    <!-- insects -->
+    <div id="p6" class="tabcontent">
+    <h2>INSECTS</h2>
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/leaf.jpg" alt="" onclick="openLeaf()"/>
+            <div class="title" style="font-size:12.5px;">Giant Malaysian Leaf Insect</div>
+         </div>
+         <button class="details" onclick="openLeaf()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="leaf" id="leaf">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Giant Malaysian Leaf Insect<br/>
+            <span>Scientific Name</span> : Phyllium Giganteum<br/>
+            <span>Type</span> : Insects<br/>
+            <span>Average Life Span</span> : Males &#10140; few weeks;Females &#10140; Up o a year<br/>
+            <span>Length</span> : 10 CM
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/ant.jpg" alt="" onclick="openAnt()"/>
+            <div class="title" style="font-size:13px">Acropyga Acutiventris</div>
+         </div>
+         <button class="details" onclick="openAnt()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="ant" id="ant">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Acropyga Acutiventris<br/>
+            <span>Scientific Name</span> : Acropyga Acutiventris<br/>
+            <span>Type</span> : Insects<br/>
+            <span>Length</span> : Up to 5 mm
+        </div>
+    </div>
+
+    <div class="animal">
+        <div class="image">
+            <img src="../pic/bee.jpg" alt="" onclick="openBee()"/>
+            <div class="title">Giant Honey Bee</div>
+         </div>
+         <button class="details" onclick="openBee()">
+            <div></div>
+            <div></div>
+            <div></div>
+            <h3>Learn More</h3>
+         </button>
+    </div>
+    <div class="bee" id="bee">
+        <div class="info">
+            <button class="closedetail" onclick="closedetail()">X</button>
+            <span>Common Name</span> : Giant Honey Bee<br/>
+            <span>Scientific Name</span> : Apis Dorsata<br/>
+            <span>Type</span> : Insects<br/>
+            <span>Average Life Span</span> : 2 months<br/>
+            <span>Length</span> : 17 to 20 mm
+        </div>
+    </div></div>
+
+    <!-- button for go to top web page -->
+    <div class="top">
+        <button id="top-btn" onclick="topFunction()">&#708;</button>
+    </div>
+    <script src="../js/viewmore.js"></script>
+</body>
+
+
+<!--This is the footer column-->
+<footer class="footer">
+    <div class="container">
+       <div class="row">
+
+          <div class="footer-col">
+             <h2>Directory</h2>
+             <ul>
+                  <li><a href="../../home/homepage.html">Home</a></li>
+                  <li><a href="menu.html">About</a></li>
+             </ul>
+          </div>
+   
+           <div class="footer-col">
+              <h2>Categories</h2>
+              <ul>
+                  <li><a href="view_more.html#p1">Mammals</a></li>
+                  <li><a href="view_more.html#p2">Amphibians</a></li>
+                  <li><a href="view_more.html#p3">Reptiles</a></li>
+                  <li><a href="view_more.html#p4">Fish</a></li>
+                  <li><a href="view_more.html#p5">Birds</a></li>
+                  <li><a href="view_more.html#p6">Insects</a></li>
+             </ul>
+          </div>
+          
+              <div class="footer-col">
+              <h2>FAQ</h2>
+              <ul>
+                  <li><a href="../../contact us/contactus.html ">Contact Us</a></li>
+             </ul>
+          </div>
+          
+              <div class="footer-col">
+              <h2>Social Media</h2>
+              <ul>
+                <div class="socialicon">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+             </ul>
+          </div>
+          
+       </div>
+   </div>
+</footer>
+
+</html>

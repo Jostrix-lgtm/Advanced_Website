@@ -1,0 +1,123 @@
+/* Design for scrollbar */
+html::-webkit-scrollbar{
+    width:8px;
+}
+
+html::-webkit-scrollbar-thumb{
+    border-radius:10px;
+    background:white;
+
+}
+
+html{
+
+    margin:auto;
+    padding: 0;
+    border:0px;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x:hidden;
+}
+
+/* Design for button to scroll to the top of the page */
+.top #top-btn{
+    color:#000;
+    position:fixed;
+    bottom:10px;
+    left:96%;
+    z-index:99;
+    font-size:25px;
+    font-weight:bold;
+    border:none;
+    outline:none;
+    border-radius:50px;
+    background-color:#fff;
+    cursor:pointer;
+    padding:0.1% 1%;
+    margin: auto;
+}
+
+.top #top-btn:hover{
+    color:#fff;
+    background-color:#000;
+}
+
+/*footer stylesheet*/
+
+.container{
+    max-width: 1170px;
+	margin:auto;
+}
+.row{
+    display: flex;
+	flex-wrap: wrap;
+}
+ul{
+    list-style:none;
+}
+.footer{
+    background-color: #484857;
+	padding: 50px 0;
+}
+.footer-col{
+    width: 20%;
+	padding: 0 20px;
+}
+.footer-col h2{
+    font-size: 20px;
+	color: #dddddd;
+	text-transform: capitalize;
+	margin-bottom: 30px;
+	font-weight: 500;
+	position: relative;
+}
+.footer-col h2::before{
+    content: '';
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	background-color: #ffffff;
+	height: 2px;
+	box-sizing: border-box;
+	width: 70px;
+}
+.footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+} 
+.footer-col ul li a{
+    font-size: 18px;
+	text-transform: capitalize;
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+    transition:all 0.5s ease;
+}
+.footer-col ul li a:hover{
+    color: #c0c0c0;
+	padding-left: 8px;
+}
+
+.footer-col .socialicon a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255,255,255,0.2);
+    margin-right: 10px;
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+  }
+  
+  .footer-col .socialicon a:hover{
+    color:#24262b;
+    background-color: #ffffff;
+  }
+
+
+

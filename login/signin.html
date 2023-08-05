@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel = "icon" href ="../home/homepage photo/icon logo.jpg" type = "image/x-icon">
+    <link href="signin.css" rel="stylesheet" />
+    <link href="../navigation bar/navigation bar.css" rel="stylesheet" />
+    <link href="../general/general.css" rel="stylesheet"/>
+    <script src="../general/general.js"></script>
+    
+</head>
+<body>
+ <!--navigation bar-->
+ <section class="showcase">
+    <header>
+        <div class="navmenu">
+            <div class="opennavmenubtn">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <div class="menucontent">
+                <a href="../home/homepage.html">Home</a>
+                <a href="../contact us/contactus.html">Contact Us</a>
+                <a href="../menu/html/menu.html">About</a>
+                <div class="dropdown">
+                    <button onclick="myFunction()" class="dropbtn">Categories</button>
+                    <div id="Dropdown" class="dropdown-content">
+                      <a href="../menu/html/view_more.html#p1">Mammals</a>
+                      <a href="../menu/html/view_more.html#p2">Amphibians</a>
+                      <a href="../menu/html/view_more.html#p3">Reptiles</a>
+                      <a href="../menu/html/view_more.html#p4">Fish</a>
+                      <a href="../menu/html/view_more.html#p5">Birds</a>
+                      <a href="../menu/html/view_more.html#p6">Insects</a>
+                    </div>
+                    <script src="../navigation bar/Navbtn.js"></script>
+                  </div> 
+            </div></div>
+        
+    </header> 
+    <div class="overlay"></div>   
+    </section> 
+    
+    <div class="bg-image">
+        <img width = 100% src="Background.jpg"></img>
+    </div>
+           <div class="loginbox">
+               
+               <h2>Sign in Here</h2><br>
+               <form>
+                   <p>USERNAME</p>
+                   <input id="username" type="text" name="" placeholder="Enter Username">
+                   <P>PASSWORD</P>
+                   <input id="password" type="password" name="" placeholder="Enter Password">
+                   <input id="loginBtn" type="button" onclick="login(); " name="" value="Login">
+                   <a href="login.html">Lost your password?</a><br>
+                   <a href="login.html">Don't have an account?</a>
+      
+               </form>
+           </div>
+           <script src="../login/login.js"></script>
+      </body>   
+</html>
+      
